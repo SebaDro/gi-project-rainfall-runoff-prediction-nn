@@ -15,6 +15,14 @@ _./data_ Ordner vor. Falls Sie die Modellierung auf selbst gewählten Einzugsgeb
 den gesamten CAMELS-US Datensatz unter: https://ral.ucar.edu/solutions/products/camels. Hier reicht es aus den ersten
 Datensatz (_CAMELS time series meteorology, observed flow, meta data (.zip)_) herunterzuladen.
 
+## Vorgaben
+Kapseln Sie eigene Implementierungen soweit wie möglich sinnvoll in separaten Modulen, Klassen und Methoden (denkbar wären z.B. eine
+mit sinnvollen Variablen und Methoden ausgestattete Klasse `CamelsDataset` zur Kapselung eines CAMEL-US Datensatzes oder eine Klasse
+ `RrpModel` mit Methoden zum Trainieren und Auswerten eines Neuronalen Netzes mit Tensorflow). Hiermit stellen Sie die Wiederverwendbarkeit
+ in nachfolgenden Übungen und Projekten sicher. Die Anwendung der eigenen Klassen und Module für die o.g. Aufgabe soll anschließend
+ innerhalb eines Jupyter Notebooks erfolgen. Beschreiben Sie dabei die einzelnen Schritte und gehen Sie insbesondere bei der Auswertung
+ auf die Modellierungsergebnisse mit Hilfe entsprechender Visualisierungen ein.
+
 ## Aufgabe
 Mit Tensorflow soll ein vollvernetztes Neuronales Netz für die Vorhersage des Niederschlagsabflusses auf Grundlage
 meteorologischer und hydrologischer Daten modelliert werden. Ziel ist es, dass das trainierte Modelle in der Lage ist,
